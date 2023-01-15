@@ -14,7 +14,7 @@ const morgan = require('morgan');
 const bodyparser = require("body-parser");
 const path = require('path');
 
-const connectDB = require('./server/database/connection');
+connectDB = require('./server/database/connection');
 
 const app = express();
 
@@ -25,7 +25,11 @@ const PORT = process.env.PORT || 8080
 app.use(morgan('tiny'));
 
 // mongodb connection
-connectDB();
+var MongoClient = require('mongodb').MongoClient;
+
+// Add database
+const uri = 'mongodb+srv://Yaru:Newworld1223@cluster1.ehpmsoe.mongodb.net/?retryWrites=true&w=majority'
+const client = new MongoClient(uri, {useNewUrlParser: true})
 
 // parse request to body-parser
 app.use(bodyparser.urlencoded({ extended : true}))
