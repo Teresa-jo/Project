@@ -1,35 +1,30 @@
 {
-  "name": "project",
+  "name": "crud_app",
   "version": "1.0.0",
-  "description": "crud application",
+  "description": "crud application with express and mongodb",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Teresa-jo/Project.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "keywords": [
-    "Express",
-    "Node",
-    "Mongodb"
+    "crud",
+    "mongodb"
   ],
-  "author": "Yaru Xu",
+  "author": "akshay kashyap",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Teresa-jo/Project/issues"
-  },
-  "homepage": "https://github.com/Teresa-jo/Project#readme",
   "dependencies": {
-    "axios": "^0.21.4",
+    "axios": "^0.21.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.6.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mongoose": "^5.13.15",
+    "mongoose": "^5.10.11",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.6",
-    "mongodb": "^4.12.1"
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
   }
 }
